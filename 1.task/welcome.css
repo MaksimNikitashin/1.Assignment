@@ -1,0 +1,17 @@
+body{
+    background-color: beige;
+}
+
+#menu{
+    width: 100%;
+    height: fit-content;
+}
+
+#header{
+    margin: 2%;
+}
+
+#welcomeMessage{
+    margin: 2%;
+    margin-top: 4%;
+}

@@ -1,0 +1,64 @@
+body{
+    background-color: beige;
+}
+
+img{
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: black;
+    margin: 2px;
+}
+
+#menu{
+    width: 100%;
+    height: fit-content;
+}
+
+#header{
+    margin: 2%;
+}
+
+.region{
+    margin: 2%;
+}
+
+#certificates{
+    display: flex;
+    flex-direction: horizontal;
+}
+
+.certificate{
+    max-width: 30%;
+}
+
+#contactMe{
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    background-color: azure;
+}
+
+#contactMe > *{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.button{
+    width: 100%;
+    height: 5vh;
+    border-radius: 20px;
+    background-color: lightcyan;
+    margin-top: 2%;
+}
+
+#errorMessage{
+    color: red;
+    visibility: hidden;
+}

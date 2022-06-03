@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Maksim Nikitashin</title>
+<link rel="stylesheet" href="resume.css">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+<object data="menu.html" id="menu"></object>
+
+<h2 id="header">Resume</h2>
+
+<div id="skills" class="region">
+    <h3>Skills</h3>
+    <p>At the moment I have some skills in HTML, CSS, JavaScript, TypeScript, Angular, Java and SQL.</p>
+    <div id="skillsPlot"></div>
+    <script>
+        var xArray = ["HTML","CSS","JavaScript","TypeScript","Angular","Java","SQL"];
+        var yArray = [60, 60, 60, 60, 40, 55, 65];
+        
+        var data = [{
+        x: xArray,
+        y: yArray,
+        type: "bar"  }];
+        var layout = {title:"My skills"};
+        let config = {responsive: true};
+        let plot = document.getElementById("skillsPlot");
+        Plotly.newPlot(plot, data, layout, config);
+    </script>
+</div>
+
+<hr>
+
+<div id="education" class="region">
+    <h3>Education</h3>
+    <p>At the moment I'm studying on the last year of bachelor degree in Organisation and Management of Information Systems at <a href="https://www.um.si/">University of Maribor.</a></p>
+    <p>In addition I have some certifications in different fields and participated in some extracurriculum activities.</p>
+    <div id="certificates">
+        <img src="0001.jpg" alt="English language certificate, 1st page" class="certificate">
+        <img src="0002.jpg" alt="English language certificate, 2nd page" class="certificate">
+        <img src="0003.jpg" alt="German language certificate" class="certificate">
+    </div>
+</div>
+
+<hr>
+
+<div id="experience" class="region">
+    <h3>Working experience</h3>
+    <div id="experienceInformation">
+    <img src="Recommendation letter.jpg" alt="Reccomendation letter" id="recommendationLetter">
+    <p>I have some working experience in Web-design field.</p>
+    </div>
+</div>
+
+<hr>
+
+<div id="cv" class="region">
+    <h3>CV</h3>
+    <p>You can get my CV in PDF.</p>
+    <a href="CV_Maksim_Nikitashin.pdf" target=”_blank” download>
+    <button class="button">Download</button>
+    </a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Maksim Nikitashin</title>
+<link rel="stylesheet" href="contactMe.css">
+<script src="contactMe.js"></script>
+</head>
+<body>
+
+<object data="menu.html" id="menu"></object>
+
+<div id="header">
+    <h2>Contact me</h2>
+    <p>You can write me via form provided below</p>
+</div>
+<div id="contactMe" class="region">
+    
+    <h3>Contact form</h3>
+    <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <label for="surname">Surname</label>
+        <input type="text" id="surname" name="surname">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+        <input type="button" class="button" value="Submit" onclick="sendEmail()">
+    </form>
+    <p id="errorMessage">Please fill all fields, before continue.</p>
+</div>
+
+</body>
+</html>
